@@ -1,0 +1,199 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: WindowHandling.spec.js >> Multi Window Handling
+- Location: tests\WindowHandling.spec.js:43:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [aria-hidden] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link [ref=e7]:
+        - /url: http://www.automationtesting.in
+      - heading [level=1] [ref=e10]: Automation Demo Site
+    - navigation [ref=e11]:
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link [ref=e16]:
+            - /url: Index.html
+            - text: Home
+        - listitem [ref=e17]:
+          - link [ref=e18]:
+            - /url: Register.html
+            - text: Register
+        - listitem [ref=e19]:
+          - link [ref=e20]:
+            - /url: WebTable.html
+            - text: WebTable
+        - listitem [ref=e21]:
+          - link [ref=e22]:
+            - /url: SwitchTo.html
+            - text: SwitchTo
+          - generic [ref=e23]: 
+        - listitem [ref=e24]:
+          - link [ref=e25]:
+            - /url: Widgets.html
+            - text: Widgets
+          - generic [ref=e26]: 
+        - listitem [ref=e27]:
+          - link [ref=e28]:
+            - /url: Interactions.html
+            - text: Interactions
+          - generic [ref=e29]: 
+        - listitem [ref=e30]:
+          - link [ref=e31]:
+            - /url: SwitchTo.html
+            - text: Video
+          - generic [ref=e32]: 
+        - listitem [ref=e33]:
+          - link [ref=e34]:
+            - /url: WYSIWYG.html
+            - text: WYSIWYG
+          - generic [ref=e35]: 
+        - listitem [ref=e36]:
+          - link [ref=e37]:
+            - /url: "#"
+            - text: More
+          - generic [ref=e38]: 
+        - listitem [ref=e39]:
+          - link [ref=e40]:
+            - /url: http://practice.automationtesting.in/
+            - text: Practice Site
+  - generic [ref=e44]:
+    - list [ref=e46]:
+      - listitem [ref=e47]:
+        - link [ref=e48]:
+          - /url: "#Tabbed"
+          - text: Open New Tabbed Windows
+      - listitem [ref=e49]:
+        - link [ref=e50]:
+          - /url: "#Seperate"
+          - text: Open New Seperate Windows
+      - listitem [ref=e51]:
+        - link [ref=e52]:
+          - /url: "#Multiple"
+          - text: Open Seperate Multiple Windows
+    - generic [ref=e53]:
+      - paragraph [ref=e54]:
+        - text: If you set the target attribute to "_blank" , the link will open in a new browser window or a new tab
+        - link [ref=e55] [cursor=pointer]: Automation Training Courses
+      - link [ref=e59]:
+        - /url: http://www.selenium.dev
+        - button [ref=e60] [cursor=pointer]: click
+  - generic [ref=e62]:
+    - insertion [ref=e65]:
+      - generic [ref=e68]:
+        - heading [level=2] [ref=e70]: Discover more
+        - link [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]: Robotic Process Automation
+        - link [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]: Source Robotics
+        - link [ref=e81] [cursor=pointer]:
+          - generic [ref=e82]: Try Dev Tools
+        - link [ref=e86] [cursor=pointer]:
+          - generic [ref=e87]: Try Cloud Tools
+        - link [ref=e91] [cursor=pointer]:
+          - generic [ref=e92]: Selenium Grid Setup
+        - link [ref=e96] [cursor=pointer]:
+          - generic [ref=e97]: Multiple Window Handling
+        - link [ref=e101] [cursor=pointer]:
+          - generic [ref=e102]: Window Switching Techniques
+        - link [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]: QA Consulting Services
+    - insertion [ref=e113]:
+      - generic [ref=e116]:
+        - heading [level=2] [ref=e118]: Discover more
+        - link [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]: Software Testing Tools
+        - link [ref=e124] [cursor=pointer]:
+          - generic [ref=e125]: Automation Testing Services
+        - link [ref=e129] [cursor=pointer]:
+          - generic [ref=e130]: Automation Training Courses
+        - link [ref=e134] [cursor=pointer]:
+          - generic [ref=e135]: Selenium WebDriver Tutorials
+        - link [ref=e139] [cursor=pointer]:
+          - generic [ref=e140]: Window Handle Solutions
+        - link [ref=e144] [cursor=pointer]:
+          - generic [ref=e145]: Browser Window Management
+        - link [ref=e149] [cursor=pointer]:
+          - generic [ref=e150]: Web Application Testing
+        - link [ref=e154] [cursor=pointer]:
+          - generic [ref=e155]: Test Automation Frameworks
+    - insertion [ref=e161]:
+      - iframe [ref=e163]:
+        - iframe [ref=f4e1]:
+          - generic:
+            - generic [ref=f7e1]:
+              - generic [ref=f7e2]:
+                - generic:
+                  - generic [ref=f7e3] [cursor=pointer]
+                  - button [ref=f7e8] [cursor=pointer]
+              - insertion [ref=f7e16]:
+                - generic [ref=f7e17]:
+                  - link [ref=f7e18]:
+                    - /url: https://googleads.g.doubleclick.net/dbm/clk?sa=L&ai=CIeoy-1DXaqLmOKyS88EPxLn_qAqI0YTjiAH0qoqg4xWeo5ia6UQQASCPvrcvYOWCgIDYDqABi-KKoAHIAQmoAwHIA5sEqgSFAk_QQ7WR-0jexKEwqVx3T9seW4tVQqxbH3u1GKIKmisPzKTlwdaB4q2LYH4smfBXECdJUkgsxwHJDMESR4iQIDkzUiO0OamyMcAyJvBD5KuFUFHXo-xLNKwpgkXYcY8F3PORic-sRiNDr0l5-iV1CBlMS-dTC2AIrc4N_7rWd1Y2-SC1ZGFJjNIsVvZZK40Un8lB_giOmnFXWwquNiw97OoHGKUDvZ6WqgutUFjiKvQ18lesyr5XOOmO8g0y5PPXrhP9-HYZzYpbCr1TwNf6ry9cm4ABekG1ybJxN7hSEWdcqruwXKG2y6FbuiZ6gfnqGX8p64M3ywI0SbjOR4zybQHSWB2fpsAEwsSCzu0E4AQDiAXojfL0UZAGAaAGTYAH3Z313wKoB6nrsQKoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQKoB-fXsQLYBwDSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WOig4Lu_yJcDYAGACgGYCwHICwGADAGqDQJJTuoNEwjp0-C7v8iXAxUsyTwCHcTcH6XwDQGIDgmwE7aR4SXIE_vm_eUD0BMA2BMKiBQB2BQB0BUByhYCCgD4FgGAFwGyFxAYAioKNjYzODYzMzU0N1AG6BcFqhgXCQAAAADYTRBBEgo2NjM4NjMzNTQ3GAGyGAkSAp1jGE0iAQDQGQHYGQE&ae=1&num=1&cid=CAQSnwIAQM4h3OpEQ6MmYomvrDafahaCG9kpmqQmwt9oSKDn0gvFRM5kEgvw9hhqd5juyoxeQtyX1gU3gJbPl_-N-oWe0ZvLOW_6YIkVbIlQptjT3Av2i-uv1zZYKbnQOC4WKtNPN78jy6PJJjPw4GiaCcsfMCdLYhm7-eB0lUC1luzpQctbj6BvEXLSj4hiO_9Z18KH-L3ld1N4r3VI5Cojq96WPzWS_YpjAZXkIfcC-e1z1N1PpRrQP7oRuw8O403OZE-Dk6G3Bk7ZuP6K9HFLAozZk3GF22v2MXYMtltZpObsmj_vKcqAAf17rIcjfZtOrOCukzR6rJmZKaT6voQi_V28ubr83Kclev3wui_g3tI28ij3UkaXjWk54dBi_HgOQxgB&sig=AOD64_0y0ncj4iOp9TizETT0uNFecyK5jQ&dbm_c=AKAmf-BC4alJgSctgt9vaNlEmY_84uMq-XBjyextzwwL0k5Nei3XD9iibL71USnge0FrbSvjdqRIQdS06X_Senldsf5VGoiK7PrWXAuKiGr5vh1RKmBTS8cEM30G_ywbJBzwjoRc44E8vfDQ9sqUHZujvZkFOJAKnjy3KgQG5nYxVRXZkALgXIvwWzb7amseU9y7SuraH5To9RhcaBH7mJVsaeviRtahRD8rVsfa6CI8OTL9yk4pzBAuIwC7RV6z-CtRQ4L4numr8hJmEbUhwztnnCGCjGWDWK32GacDUpFs_OSi47YQHfPhQZMzqFZ8Myysy-beAGzm&cry=1&dbm_d=AKAmf-BhUxvSSoIDjsAv5ctnXOfeqx9PFWpfWc6VawyIPgY28BePZ8o3La3nX3dymuEmaJ2lE4-pGVSwz6ZeyJBRIiYhXpb3cKcfcGvP-eSnH7_NztNwIVbhCiFndHEofmkzkrn0KxHKUBrfbNZ5tp1TUTeFUzxFujRxiU-vSdvvJ6yYHtFNn77wfgMDmhG73LI7p8Fa4BRTCLmUKpuQb4cvd0YyJbvnyXUExJhvIqZxbPKjJat03CxPMF6PQob6oRJTRhI4ndMjFD59iGAodPEhrvaUzPq0YAvgtKBcxdzl968BmQHsm7nFmRsRsHEHjHtvNcSCeMviFmVgtquWNngcEDY-a_caUmRhNZndyUxJSY0x9Pp0KzlCR51vZm1-eigifw-u5yim3Ilqt-8m9QVFV93aZzTGsZrh3KU4Ma6faIjEx3eBCtW1LfCE-KKzqUoIddJtOPxxlPVCknegC6muZRxt9VyEtVryEw_dXlE-m82vCdyx2Thh3tjgn2JokU0AOZnIqWhMpYuaYmPcZsyNeWgYOd-p51QH36pLNUMbrCjDAkwQaIaiIkqh_jVlPvjJGW-Lel2Ogg5u7znM6dHY41ekVw1sFoLNSD9iMmvuDLgr4RhVH9yBOQAr47lJDGcz5qS66PTaSJhGLuZZQ6cERTNsqx07JG8ZkpgAJfCmwCY-ts1Am6l3fkL6iL727FcU_USv-dZneCvnygoHiwQsjWMmiBo8tplZQaelEjnN2GcBlhrdoVWvrxhJbMVAQJsA_a1MMQ14&adurl=https://servedby.flashtalking.com/click/7/296969;10262637;4919222;210;0/?us_privacy=!!US_PRIVACY!&ft_partnerimpid=ABAjH0i2N6cL9OOKjUQXs2CI9pTz&ft_impID=CB65515A-79DA-7810-7EC0-EC2F4F412BC7&ft_section=21988411112&g=68674BFB2AAEDB&random=965780.4790484989&ft_width=160&ft_height=600&url=https://www.adobe.com/in/creativecloud.html?sdid=PC1PQ9XF&mv=display&mv2=display
+                    - img "Click Here" [ref=f7e19]
+                  - link [ref=f7e21]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+                    - img "AdChoices arrow" [ref=f7e22]
+                  - link "Privacy Notification" [ref=f7e24]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+            - iframe
+    - insertion [ref=e166]:
+      - iframe [ref=e168]:
+        - iframe [ref=f5e1]:
+          - generic:
+            - generic [ref=f9e1]:
+              - generic [ref=f9e2]:
+                - generic:
+                  - generic [ref=f9e3] [cursor=pointer]
+                  - button [ref=f9e8] [cursor=pointer]
+              - insertion [ref=f9e16]:
+                - generic [ref=f9e17]:
+                  - link [ref=f9e18]:
+                    - /url: https://googleads.g.doubleclick.net/dbm/clk?sa=L&ai=C-2xx-1DXas_DPMKDjMwPspiAsAqI0YTjiAH0qoqg4xWeo5ia6UQQASCPvrcvYOWS6IPYDqABi-KKoAHIAQmoAwHIA5sEqgSFAk_QZWvkHPgw8QSypwxCoXmg5x84-SfnNmB_3RcMfLLdkJRFER6XrnTEwYc2Nb0t7rHS3tcgZZHu5Npvh1Xbn2psojukwsMqDW-3hAmctiYe4b2o7r0_8Gz_j0Bg0Je4T7XqhSMuYW86Kcq1B7XG4AxuKT4hihPMYs8lbS5Id7GjH6khqWPGLlsCPg4OcgkDXZBqzO2gINaQ0DAVZ9uHTEaAnraK5F2o0rGa5AfjPPWLhclusT33EIUjElGxy7RZ7Rw9Y96Jy-x40g-wFFfZQ0Bxb6a8tIpFA7jrHxrBCG6JX_IUq2mSFb94MDFJoPe0DoEOIxog8_0ZmKeSGxcTfuQll7qXCsAEwsSCzu0E4AQDiAXojfL0UZAGAaAGTYAH3Z313wKoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQKoB-fXsQLYBwDSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WO3947u_yJcDYAGACgGYCwHICwGADAGqDQJJTuoNEwj4sOS7v8iXAxXCAYMDHTIMAKbwDQGIDgmwE7aR4SXIE_vm_eUD0BMA2BMKiBQB2BQB0BUByhYCCgD4FgGAFwGyFxAYAioKNjYzODYzMzU0N1AG6BcFqhgXCQAAAADYxw1BEgo2NjM4NjMzNTQ3GAGyGAkSAp1jGE0iAQDQGQHYGQE&ae=1&num=1&cid=CAQSoAIAQM4h3PBAS136f_Xq-aHrvpEy6qjltu6UjysQdrpLUkTIy4lYKdkN2JNBciVyvHHT3dlyMYHCXKF3Y3dYoEEVDLjX1wB7agJCZznrdKoyCIZyMo3JlSGYp7VGHmfouMNin8ervyp5QngCllAeH1PgXEBofD_TChrXA4xlcfolTQbTieEeiy_WfnOseOlQ-xQ7shQ9Si3TxYfa_OggvAb8Xl6TQh2jVNcgm5SJCEUqIcdzqti087T6mOOsyecVSQFFZIJnyLHjMPCWf_AKnXlf-Ww93p0uHU7Lgp_mUWzxn_cnmKFozohkdR2jwzJccJxE-NRdj1s5T0S74acXMEftLfOpdNWDIPubSvgXzNyo5WhGE6X_bUvmnW0OS1uUL5sYAQ&sig=AOD64_2_wbW_BV6QqRVyrCg5NvcT5b0cHA&dbm_c=AKAmf-Aoma9wm4_q77ytMLdWeuAq9tgpJmFYQ2Jtsc8DGijCBMT8f_kjUa3w68nTNf5HIy_uFVGj1ekZYo99p5lfZWtf1XSGzzp3S_c49yubyuWi34ZNb37RdSa_Oc8tynJvw8qvRxxJ2lc8xWfgikEJQrLTKPhyPDpOgN9kEpk7gBlJ9B_HmKmSDWE0UNOVpBkyPzwOggNFe3Ky6GuE4BePlMsh1wssmtSWnJo4wSK6tcCkJR27bc31bXOf1ky48vvQKI9IyHCwj0dPFWe6x0QFZT9Ie2UjmHDVbTLPKR_PUGeBnOJjdFnfUsAZ-3dUXj3nP8Yc61ZT&cry=1&dbm_d=AKAmf-AGjtI1XJ8uer_yQ6HvamOU5g0r6tOaypSOFTfx0IAn5-fedFegV_gtJM9xGfkNe0oqRiZURoktf5PQB_AujIzVCGBMPen785N-g9EgzR-eLT4mFQkN6eBL2x-bIiko3DAed6BCvNu8e7fjneiwzbLYRY9i_gAfyA35D-lfAh15U6M5mzmSJJiUR07e6_W64qjhkC18DRUgWbQT6HmKUWfAL3t9rqBfdbmC7Jo-CakR1W5EhJrqv_3wHWJc5DLBXz8Bune1nMtxeO_U-hCdHLj_ZDr9voL-Pttrfc8aDX2lM3MVuHIpcKgrhqAt9JpZt3s2_7Q7ll3knKYXLnEpXD2JWbJmhjKiTXfojV8eykUrZLQBh-hLLIa7L_WzrAELju1_oRt9DxzFqW_1xD_Zr52eFRxOZcCb8absNbozel2w0jhRXHi6sWV9HnIyAxwLkpcUKKHNSR-5M1fAKOEj78Tw16fiHYr7CshDIXfVG7p8gtLBOteL_mWNujd8sMmpzBZHQAmK4WJlqbEQyjltJhiUKZJbvpPeu8QPbogmWlntc2hK3HxTyPjZ2CZLaXU4jMe0l6Dt8PyNA2d29gcLCmVg15b4KX_6jJDRiQenEBldh5nJsIC1Sj4mQMXdZX5ys3Ca1b3GxNPkOBVIQShFp0ENlgDLvjWYY6bfi5sknKHTs0eltkwC-kfV0O4OgR_hwHwRGCmXUK6bUoYCiLdmDq3m3xdRE1Ce_XE1PZcM2IVl7TFGa430v6tC1UYJlGuta1eaX0Lz&adurl=https://servedby.flashtalking.com/click/7/296969;10262637;4919258;210;0/?us_privacy=!!US_PRIVACY!&ft_partnerimpid=ABAjH0gAvEUus6qTR7idhqPHxD91&ft_impID=DF5D5510-6C07-B199-619A-38F53F0D486C&ft_section=21988411112&g=686778A7E5D352&random=678263.424804179&ft_width=160&ft_height=600&url=https://www.adobe.com/in/creativecloud.html?sdid=PC1PQ9XF&mv=display&mv2=display
+                    - img "Click Here" [ref=f9e19]
+                  - link [ref=f9e21]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+                    - img "AdChoices arrow" [ref=f9e22]
+                  - link "Privacy Notification" [ref=f9e24]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+            - iframe
+    - contentinfo [ref=e170]:
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - text: "\"@ 2016\""
+          - link [ref=e174]:
+            - /url: "#"
+            - text: Automation Testing
+          - text: "\"All Rights Reserved.\""
+        - generic [ref=e175]:
+          - link [ref=e176]:
+            - /url: https://www.facebook.com/automationtesting2016/
+            - generic [ref=e177]: 
+          - link [ref=e178]:
+            - /url: https://twitter.com/krishnasakinala
+            - generic [ref=e179]: 
+          - link [ref=e180]:
+            - /url: https://www.linkedin.com/nhome/?trk=hb_signin
+            - generic [ref=e181]: 
+          - link [ref=e182]:
+            - /url: https://plus.google.com/105286300926085335367
+            - generic [ref=e183]: 
+          - link [ref=e184]:
+            - /url: https://www.youtube.com/channel/UCmQRa3pWM9zsB474URz8ESg
+            - generic [ref=e185]: 
+```
